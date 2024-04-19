@@ -1,14 +1,34 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="vertex" content="width=device-width, initial-scale=1.0">
-    <title>Display Image</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Centered Image</title>
+    <style>
+        /* CSS to center the image */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure full viewport height */
+            margin: 0; /* Remove default margin */
+        }
+        #image-container {
+            text-align: center; /* Center align within container */
+        }
+        #image-container img {
+            max-width: 100%; /* Ensure image does not exceed container width */
+            max-height: 100%; /* Ensure image does not exceed container height */
+            display: block; /* Remove any inline spacing */
+            margin: auto; /* Center the image horizontally */
+        }
+    </style>
 </head>
 <body>
 
-<!-- Replace 'image-url.jpg' with the URL or path to your image file -->
-<img src="Screenshot 2024-04-18 000345.png" alt="Description of the image" width="300" height="200">
+<div id="image-container">
+    <!-- Replace 'image-url.jpg' with the URL or path to your image file -->
+    <img src="Screenshot 2024-04-18 000345.png" alt="Description of the image">
+</div>
 
 </body>
 </html>
